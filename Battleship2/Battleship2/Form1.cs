@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Battleship2
 {
@@ -16,6 +17,7 @@ namespace Battleship2
         private Bitmap emptyCellImg;
         private PictureBox[,] emptyCellEnemy;
         private Bitmap emptyCellEnemyImg;
+        private bool isHit;
 
         public Form1()
         {
@@ -44,6 +46,7 @@ namespace Battleship2
                     ec.Size = new Size(width, height);
                     ec.Location = new Point(i * 48 + 50, j * 48 + 50);
                     ec.Image = emptyCellImg;
+                    ec.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.Controls.Add(ec);
                     emptyCell[i, j] = ec;
                 }
@@ -69,10 +72,21 @@ namespace Battleship2
                     ece.Size = new Size(width, height);
                     ece.Location = new Point(i * 48 + 760, j * 48 + 50);
                     ece.Image = emptyCellEnemyImg;
+                    ece.SizeMode = PictureBoxSizeMode.StretchImage;
                     this.Controls.Add(ece);
                     emptyCellEnemy[i, j] = ece;
+                    ece.MouseClick += emptyCellEnemy_MouseClick;
                 }
             }
         }
+
+        private void emptyCellEnemy_MouseClick(object sender, MouseEventArgs e)
+        {            
+            var clickedPictureBox = sender as PictureBox;
+            if (isHit)
+                clickedPictureBox.Image = new Bitmap("G:\\p\\hit.jpg");
+            else
+                clickedPictureBox.Image = new Bitmap("G:\\p\\miss.jpg");
+        }   
     }
 }
