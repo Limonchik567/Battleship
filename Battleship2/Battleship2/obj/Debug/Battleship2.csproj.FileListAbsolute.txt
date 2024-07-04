@@ -1,0 +1,10 @@
+G:\Коды\Battleship2\Battleship2\bin\Debug\Battleship2.exe.config
+G:\Коды\Battleship2\Battleship2\bin\Debug\Battleship2.exe
+G:\Коды\Battleship2\Battleship2\bin\Debug\Battleship2.pdb
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.csproj.AssemblyReference.cache
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.Form1.resources
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.Properties.Resources.resources
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.csproj.GenerateResource.cache
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.csproj.CoreCompileInputs.cache
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.exe
+G:\Коды\Battleship2\Battleship2\obj\Debug\Battleship2.pdb
